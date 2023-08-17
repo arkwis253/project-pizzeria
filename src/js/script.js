@@ -137,7 +137,6 @@ const select = {
         for(let optionId in param.options){
           // determine option value, e.g. optionId = 'olives', option = { label: 'Olives', price: 2, default: true }
           const option = param.options[optionId];
-          console.log('opcja!!');
           console.log(optionId, option);
           if(formData[paramId] && formData[paramId].includes(optionId)){
             if(!option.default){
@@ -148,13 +147,11 @@ const select = {
               price -= option.price;
             }
           }
-          console.log('formdataArray:', formData.param);
         }
       } 
       // update calculated price in the HTML
       const totalPrice = thisProduct.form.querySelector(select.menuProduct.priceElem);
       totalPrice.innerHTML = price;
-      console.log('formData: ', formData);
     }
   }
 
