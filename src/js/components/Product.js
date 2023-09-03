@@ -118,7 +118,7 @@ class Product{
       const thisProduct = this;
       
       thisProduct.amountWidgetElem = new AmountWidget(thisProduct.amountWidgetElem);
-      thisProduct.amountWidgetElem.element.addEventListener('updated', function(){
+      thisProduct.amountWidgetElem.dom.wrapper.addEventListener('updated', function(){
         thisProduct.processOrder();
       })
     }
