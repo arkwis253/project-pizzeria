@@ -43,6 +43,7 @@ booking: {
     peopleAmount: '.people-amount',
     hoursAmount: '.hours-amount',
     tables: '.floor-plan .table',
+    floorPlan: '.floor-plan',
 },
 nav: {
     links: '.main-nav a',
