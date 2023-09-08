@@ -684,7 +684,7 @@ input.error, select.error {
   background: #333;
   opacity: 0.4;
 }
-.floor-plan .table.selectedTable {
+.floor-plan .table.selected {
   background: #78e08f;
 }
 .floor-plan [data-table="1"] {

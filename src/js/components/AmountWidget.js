@@ -25,7 +25,7 @@ class AmountWidget extends BaseWidget{
     thisWidget.dom.input.value = thisWidget.value;
   }
   
-  isValue(value){
+  isValid(value){
     return !isNaN(value)
     && value >= settings.amountWidget.defaultMin 
     && value <= settings.amountWidget.defaultMax;

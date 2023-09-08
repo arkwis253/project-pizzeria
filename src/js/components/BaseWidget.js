@@ -17,7 +17,7 @@ class BaseWidget{
     const thisWidget = this;
     
     const newValue = thisWidget.parseValue(value);
-    if(thisWidget.correctValue !==  newValue && thisWidget.isValue(value)){
+    if(newValue !==  this.correctValue && thisWidget.isValid(newValue)){
       thisWidget.correctValue = newValue;
       thisWidget.announce();
     }
@@ -34,7 +34,7 @@ class BaseWidget{
     return parseInt(value);
   }
 
-  isValue(value){
+  isValid(value){
     return !isNaN(value);
   }
 

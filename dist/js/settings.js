@@ -44,6 +44,14 @@ booking: {
     hoursAmount: '.hours-amount',
     tables: '.floor-plan .table',
     floorPlan: '.floor-plan',
+
+    form: '.booking-form',
+    sendButton: '[type="submit"].btn-secondary',
+    phone: '[name="phone"]',
+    address: '[name="address"]',
+    ppl: '.amount[name="people"]',
+    hours: '[name="hours"].amount',
+    checkbox: '.checkbox label input',
 },
 nav: {
     links: '.main-nav a',
