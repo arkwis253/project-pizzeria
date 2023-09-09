@@ -3,12 +3,14 @@ templateOf: {
     menuProduct: '#template-menu-product',
     cartProduct: '#template-cart-product', // CODE ADDED
     bookingWidget: '#template-booking-widget',
+    homePage: '#template-home-page',
 },
 containerOf: {
     menu: '#product-list',
     cart: '#cart',
     pages: '#pages',
     booking: '.booking-wrapper',
+    home: '.home-wrapper',
 },
 all: {
     menuProducts: '#product-list > .product',
@@ -74,6 +76,12 @@ cartProduct: {
     edit: '[href="#edit"]',
     remove: '[href="#remove"]',
 },
+
+home: {
+    homeLinks: '.top-section a',
+    orderButton: '.order',
+    bookButton: '.book'
+}
 };
 
 export const classNames = {
@@ -142,4 +150,6 @@ menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuPro
 cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
 // CODE ADDED END
 bookingWidget: Handlebars.compile(document.querySelector(select.templateOf.bookingWidget).innerHTML),
+
+homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
 };
